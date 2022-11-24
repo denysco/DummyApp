@@ -23,4 +23,4 @@ jobs:
           command: brew install xcbeautify
       - run:
           name: test
-          command: xcodebuild -project DummyApp.xcodeproj -scheme DummyApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE,OS=16.0' test
+          command: xcodebuild -project DummyApp.xcodeproj -scheme DummyApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.0' test | xcbeautify
