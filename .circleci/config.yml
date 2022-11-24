@@ -15,4 +15,10 @@ jobs:
     steps:
       - checkout
       - run: xcodebuild -version
+      - run:
+        name: install xcbeautify
+        command: brew install xcbeautify
+      - run:
+        name: list devices
+        command: run instruments -s devices
   
