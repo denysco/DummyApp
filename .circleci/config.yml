@@ -16,6 +16,9 @@ jobs:
       - checkout
       - run: xcodebuild -version
       - run:
+          name: list files
+          command: ls -a
+      - run:
           name: install xcbeautify
           command: brew install xcbeautify
       - run:
