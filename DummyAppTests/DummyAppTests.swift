@@ -12,4 +12,8 @@ final class DummyAppTests: XCTestCase {
     func test() {
         
     }
+    
+    func test_fail() {
+        XCTFail("failed")
+    }
 }
