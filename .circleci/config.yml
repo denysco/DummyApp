@@ -6,10 +6,10 @@ version: 2.1
 workflows:
   build-project:
       jobs:
-        - build
+        - build-and-test
 
 jobs:  
-  build:
+  build-and-test:
     macos:
       xcode: 14.0.0
     steps:
