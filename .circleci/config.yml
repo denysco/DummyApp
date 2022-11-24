@@ -14,4 +14,5 @@ jobs:
       xcode: 14.0.0
     steps:
       - checkout
+      - run: xcodebuild -version
   
